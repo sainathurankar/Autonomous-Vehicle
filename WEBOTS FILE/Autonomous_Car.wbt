@@ -74,8 +74,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.008589712700932008 -0.9894694007606069 -0.14448709905787777 3.2591045301845587
-  position -52.17878604736924 9.014026174295983 32.69388961631818
+  orientation 0.10455008977372965 -0.9873201872788868 -0.11944926337106092 4.566918468023074
+  position 63.11699216559115 8.746270749472295 -44.67079269316254
   near 1
   follow "vehicle"
   followSmoothness 0
@@ -207,7 +207,7 @@ CurvedRoadSegment {
   curvatureRadius 40.5
 }
 StraightRoadSegment {
-  translation 105 0.02 64.5
+  translation 105 0.02 43
   rotation 0 1 0 3.1416
   name "road(3)"
   id "3"
@@ -228,7 +228,29 @@ StraightRoadSegment {
   leftBorder FALSE
   rightBarrier TRUE
   leftBarrier TRUE
-  length 69
+  length 48
+}
+StraightRoadSegment {
+  translation 105 0.02 65
+  rotation 0 1 0 3.1416
+  name "road(2)"
+  id "3"
+  startJunction "23"
+  endJunction "22"
+  width 21.5
+  numberOfLanes 4
+  numberOfForwardLanes 2
+  lines [
+    RoadLine {
+    }
+    RoadLine {
+      color 0.85 0.75 0.3
+      type "double"
+    }
+  ]
+  rightBorder FALSE
+  leftBorder FALSE
+  length 22
 }
 StraightRoadSegment {
   translation -45 0.02 66
@@ -299,7 +321,6 @@ StraightRoadSegment {
   rightBorder FALSE
   leftBorder FALSE
   rightBarrier TRUE
-  leftBarrier TRUE
   length 30
 }
 CurvedRoadSegment {
@@ -346,34 +367,34 @@ StraightRoadSegment {
   ]
   rightBorder FALSE
   leftBorder FALSE
-  rightBarrier TRUE
   leftBarrier TRUE
   length 30
 }
 BmwX5 {
-  hidden position_0_0 -0.044582771297126886
-  hidden position2_0_0 49975.34846569724
-  hidden position_0_1 -0.04340245182410777
-  hidden position2_0_1 50689.112810778985
-  hidden position_0_2 45339.69652264327
-  hidden position_0_3 46332.59793285339
-  hidden position_0_4 0.4500000000000002
-  hidden position_0_5 0.4500000000000002
-  hidden position_0_8 -0.4737468828158259
-  hidden position_0_9 0.8036075207761184
-  hidden rotation_1 -0.036028970398117734 -0.9991024645338902 0.022275067998962898 1.1082710389240624
-  hidden rotation_2 -0.005363718063745404 0.9997501561858505 0.021699210467201052 3.6261311412561654
-  hidden rotation_3 0 1 0 0.23134603537703854
-  hidden rotation_4 0 -1 0 0.38947771111605706
-  hidden translation_20 0.6735079868543279 -0.06396507185634026 0.09824930990562031
-  hidden rotation_20 0.014426526493766216 -0.7898523255337003 -0.6131273759850642 0.4499999999999997
-  hidden translation_21 0.7368616286563121 0.025967147323373352 -0.08559052227259878
-  hidden rotation_21 -0.03580789568344439 -0.8280575876796515 -0.5594983700538185 0.4499999999999997
-  hidden rotation_24 0 0.3205961743168832 -0.9472159695726095 0.4737468828158262
-  hidden translation_25 1.5842071994676918 0.17678594861838215 0.15750020876909465
-  hidden rotation_25 0 -0.6652060421485011 0.7466598432279095 0.8036075207761182
-  translation -11.29827285594155 0.3170284093371678 103.83230095510132
-  rotation 0.0004483352416602978 -0.9999863434538774 -0.0052069089923717435 -1.337507490023936
+  hidden position_0_0 -0.014194813976019453
+  hidden position2_0_0 14899.135742332674
+  hidden position_0_1 -0.014065984239082056
+  hidden position2_0_1 15191.233889984425
+  hidden position_0_2 14872.363347006914
+  hidden position_0_3 15152.687085137077
+  hidden position_0_4 4.85722573273506e-17
+  hidden position_0_5 4.85722573273506e-17
+  hidden position_0_8 -0.14285802255339453
+  hidden position_0_9 0.41284377507354486
+  hidden rotation_1 0.0062135287974966254 -0.9999555098425706 0.007097210393355322 4.579762196752089
+  hidden rotation_2 0.007487466314504964 0.9999472378373341 0.0070327369974213065 1.5082354360614816
+  hidden rotation_3 0 -1 0 6.219460394346367
+  hidden rotation_4 0 1 0 2.35587578008579
+  hidden translation_20 2.5673907444456745e-16 -2.220446049250313e-16 -8.881784197001252e-16
+  hidden rotation_20 0.014426526493766214 -0.7898523255337002 -0.6131273759850641 0
+  hidden translation_21 -2.220446049250313e-16 -1.1102230246251565e-16 -4.440892098500626e-16
+  hidden rotation_21 -0.03580789568344439 -0.8280575876796515 -0.5594983700538185 0
+  hidden rotation_24 0 0.3205961743168832 -0.9472159695726095 0.14285802255339583
+  hidden translation_25 0.8385543918948557 -0.029464227678625776 -0.026249948295501646
+  hidden rotation_25 0 -0.6652060421485012 0.7466598432279097 0.41284377507354464
+  translation 48.8064 0.180619 -44.3604
+  rotation -0.004561211757937414 -0.9999804424640829 -0.004279022859955673 1.6129611652451463
+  engineSound ""
   controller "controller_NBS"
   supervisor TRUE
   sensorsSlotFront [
@@ -409,7 +430,7 @@ BmwX5 {
       fieldOfView 1
       width 128
       recognition Recognition {
-        maxRange 40
+        maxRange 30
         occlusion FALSE
       }
     }
@@ -435,8 +456,10 @@ PedestrianCrossing {
   name "pedestrian crossing(1)"
 }
 OilBarrel {
-  translation 33.037800000013 0.5998773936179348 107.31999909059904
-  rotation 7.310985222054853e-17 -1 -6.947180304848466e-17 1.5708000000308497
+  hidden linearVelocity_0 1.0568627495664735e-17 -1.6085347691701434e-08 -6.202986092813697e-18
+  hidden angularVelocity_0 -2.6143022496098768e-17 7.443181266187645e-18 -1.2933458380030404e-17
+  translation 11.99999999096724 0.5998773756398306 107.00000000884667
+  rotation 0.6997094919548615 -2.0102618572650655e-09 0.71442748188201 -3.1415926420300657
   name "oil barrel(1)"
   height 1.2
   radius 0.4
@@ -448,35 +471,11 @@ OilBarrel {
   }
 }
 OilBarrel {
-  translation 54.770003 0.599877393617935 103.169
-  rotation -3.1558718557036485e-16 -1 -1.3579053861961527e-17 1.5708000000000002
-  name "oil barrel(2)"
-  height 1.2
-  radius 0.4
-  physics Physics {
-    density -1
-    mass 100
-    damping Damping {
-    }
-  }
-}
-OilBarrel {
-  translation 102.24922993055709 0.399754786484298 38.39968551450326
-  rotation 0.8901171169304787 0.4268063171620579 -0.15977448412663842 -1.7954189520872268
+  hidden linearVelocity_0 1.0918306591552013e-17 -1.6085347680681615e-08 -9.738121009918748e-18
+  hidden angularVelocity_0 -3.079391914825307e-17 1.4542332596945348e-18 -2.2040341496702264e-17
+  translation 106.50402425312592 0.5998773756398299 48.20520054252656
+  rotation -1.2156614222079516e-16 -1 1.7627714164506521e-16 -1.5495427353656823
   name "oil barrel(3)"
-  height 1.2
-  radius 0.4
-  physics Physics {
-    density -1
-    mass 100
-    damping Damping {
-    }
-  }
-}
-OilBarrel {
-  translation -20.1904 0.599877393617935 48.6853
-  rotation 8.507292322662467e-17 1 1.2189701147677965e-16 -1.7017
-  name "oil barrel(7)"
   height 1.2
   radius 0.4
   physics Physics {
@@ -606,9 +605,119 @@ Crossroad {
   ]
 }
 DEF traffic_light_1 GenericTrafficLight {
-  translation -50.29 0 65
+  translation -50.28 0 65.1
+  name "generic traffic light(1)"
+  startGreen FALSE
+  greenTime 10
+  redTime 10
+  state "orange"
+}
+DEF traffic_light_1 GenericTrafficLight {
+  translation 22.6973 0 -49.5193
+  rotation 0 1 0 -1.5707996938995747
   startGreen FALSE
   greenTime 10
   redTime 10
   state "red"
+}
+SolidBox {
+  hidden linearVelocity_0 8.929354391393913e-18 -1.6685062220891657e-10 -3.2336168278335476e-18
+  hidden angularVelocity_0 -3.330669073875465e-18 6.388014300830589e-19 -6.6613381477509475e-18
+  translation 80.31 0.9999987737566735 -43.799999911607564
+  rotation 0.9999898699763351 0.004501081112484678 -1.461270851993037e-05 -3.646789665002106e-14
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/logo.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+  physics Physics {
+    mass 1
+    centerOfMass [
+      0 0 0
+    ]
+  }
+}
+ResidentialTower {
+  translation 39.13 0 -27.52
+}
+MotelReception {
+  translation 0.65784 0.4 89.1438
+  rotation 0 1 0 3.141592653589793
+}
+Church {
+  translation 59.97 0 -24.68
+}
+ResidentialBuilding {
+  translation 38.2 0 82.9
+}
+ResidentialBuilding {
+  translation -25 0 42
+  rotation 0 1 0 -1.5707996938995747
+  name "residential building(1)"
+}
+Auditorium {
+  translation -9.24717 0 -4.23707
+  rotation 0 1 0 -0.7853996938995746
+}
+ResidentialBuilding {
+  translation -64.52 0 23.59
+  rotation 0 1 0 -1.5707996938995747
+  name "residential building(2)"
+}
+Hotel {
+  translation 26.95 0 24.7
+}
+SuburbanHouse {
+  translation 13.94 0 -20.77
+}
+GasStation {
+  translation 129 0 57
+  rotation 0 -1 0 -1.5708053071795867
+}
+GasStation {
+  translation 79.79 0 50.39
+  rotation 0 1 0 -1.5707953071795862
+  name "gas station(1)"
+}
+StripBuilding {
+  translation 87 0 -60
+  rotation 0 1 0 -3.141592653589793
+}
+TheThreeTowers {
+  translation 22.21 0 126.85
+}
+HollowBuilding {
+  translation 134.23 0 10.52
+}
+BigGlassTower {
+  translation 111 0 102.2
+  rotation 0 1 0 -0.9163003061004252
+}
+BigGlassTower {
+  translation 95 0 114
+  rotation 0 1 0 -1.0471996938995747
+  name "big glass tower(1)"
+}
+UBuilding {
+  translation 68.01 0 5
+  rotation 0 1 0 -1.5707996938995747
+}
+Museum {
+  translation -55.6266 0 -33.58
+  rotation 0 1 0 -0.5235996938995747
+}
+CyberboticsTower {
+  translation 116.626 0 -43.1286
+  rotation 0 1 0 -0.9163003061004252
+}
+CommercialBuilding {
+  translation -33.7413 0 123.31
+  rotation 0 1 0 -0.3926996938995747
+}
+BuildingUnderConstruction {
+  translation -65.41 0 73.72
 }

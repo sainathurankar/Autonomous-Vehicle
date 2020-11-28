@@ -219,7 +219,7 @@ double filter_angle(double new_value) {
 // returns approximate angle of obstacle
 // or UNKNOWN if no obstacle was detected
 double process_sick_data(const float *sick_data, double *obstacle_dist) {
-  const int HALF_AREA = 25;  // check 20 degrees wide middle area
+  const int HALF_AREA = 20;  // check 20 degrees wide middle area
   int sumx = 0;
   int collision_count = 0;
   int x;
