@@ -443,10 +443,7 @@ int main(int argc, char **argv) {
       {
          set_speed(0);
       }
-      else if(strcmp(x,"orange")==0)
-      {
-        set_speed(5);
-      }
+      
       else {
       set_speed(40);
       }
