@@ -1,5 +1,5 @@
 # Autonomous-Vehicle
-Traffic Signal Detection, Collision Avoidance and Lane Detection in Automated Vehicle
+Traffic Signal Detection, Collision Avoidance and Line Detection in Automated Vehicle
 
 Download Webots from https://cyberbotics.com
 
